@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Cortes Lopez Cristian Yahir</title>
+</head>
+<body>
+
+    <!--ENCABEZADO DE LA PAGINA-->
+    <header>
+        <h1>Cortes López Cristian Yahir</h1>
+        <h2>Estudiante de Licenciatura en Ing. en Tecnologias de la Información e Innovacion Digital</h2>
+        <h2>GRUPO:G050401M</h2>
+    </header>
+
+    <!--MENU DE NAVEGACION, enlaces internos con # hacia cada seccion-->
+    <nav>
+        <span><a href="#sobre-mi">Sobre mí</a></span> |
+        <span><a href="#formacion">Formación</a></span> |
+        <span><a href="#proyectos">Proyectos</a></span> |
+        <span><a href="#habilidades">Habilidades</a></span> |
+        <span><a href="#contacto">Contacto</a></span>
+    </nav>
+
+    <!--MAS RELEVANTE-->
+    <main>
+
+        <!--SECCION: SOBRE MI-->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div>
+                <!--Fotografia, elemento en linea-->
+                <img src="imgs/foto-perfil.jpeg" height="200px" width="200px">
+                <p>
+                    <b><i>Estudiante de la carrera de Licenciatura en Ing. en Tecnologias de la Información e Innovacion Digital</i></b> en la
+                    <mark>Universidad Tecnológica de Nezahualcóyotl (UTN)</mark>, con matrícula
+                    <small>2532050198</small>.<br><br>
+                    Actualmente enfocado en el aprendizaje de <strong><em>HTML</em></strong> como base
+                    para la construcción de páginas web semánticas, formularios y estructuras de contenido.
+                </p>
+            </div>
+
+            <!--Datos rapidos de contacto-->
+            <aside>
+                <p>
+                    <span>Correo: Cxrteszzz@gmail.com</span><br>
+                    <span>Institución: UTN - Universidad Tecnológica de Nezahualcóyotl</span><br>
+                    <span>Contacto anterior: <del>correo-antiguo@ejemplo.com</del></span>
+                </p>
+            </aside>
+        </section>
+
+        <!--SECCION: FORMACION-->
+        <section id="formacion">
+            <h2>Formación académica</h2>
+            <article>
+                <p><b>Universidad Tecnológica de Nezahualcóyotl (UTN)</b><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<i>Técnico Superior Universitario en Desarrollo Web, área Front-End</i></p>
+
+                <p>Temas vistos en el curso hasta ahora:</p>
+                <ol>
+                    <li>Estructura básica de un documento HTML</li>
+                    <li>Etiquetas de texto: negritas, cursivas, subrayado, resaltado</li>
+                    <li>Listas ordenadas y desordenadas</li>
+                    <li>Tablas (filas, columnas y encabezados)</li>
+                    <li>Imágenes e hipervínculos</li>
+                    <li>Formularios y elementos de entrada de datos</li>
+                    <li>Etiquetas semánticas de HTML5 (header, nav, main, section, article, aside, footer)</li>
+                </ol>
+            </article>
+        </section>
+
+        <!--SECCION: PROYECTOS-->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <p><b>ILCAB (Safe Drive)</b> — <small>proyecto académico de la materia Front-End</small></p>
+                <p>
+                    Plataforma conceptual enfocada en seguridad vehicular, desarrollada como proyecto
+                    de equipo. Se generó documentación formal del proyecto (registro de equipo,
+                    propuesta, mapa de navegación y guía de estilo).
+                </p>
+                <p>Sitio publicado: <a href="https://helpful-input-180874.framer.app">helpful-input-180874.framer.app</a></p>
+                <p>Integrantes del equipo:</p>
+                <ul>
+                    <li>Cortes López Cristian Yahir</li>
+                    <li>Alonso Venegas Benjamín</li>
+                    <li>Rodríguez Villar Jonathan Alexis</li>
+                    <li>Soler Castellanos Israel</li>
+                    <li>Melgarejo Luna Irene</li>
+                    <li>Avendaño Rojas Ulises</li>
+                </ul>
+            </article>
+        </section>
+
+        <!--SECCION: HABILIDADES, tabla de filas y columnas-->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <table border="1" width="90%">
+                <tr>
+                    <th>Habilidad</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Maquetación de páginas, formularios y elementos semánticos</td>
+                </tr>
+                <tr>
+                    <td>Trabajo en equipo</td>
+                    <td>Colaboración en proyectos académicos de varios integrantes</td>
+                </tr>
+                <tr>
+                    <td>Documentación</td>
+                    <td>Redacción de documentos técnicos del proyecto</td>
+                </tr>
+            </table>
+
+            <p>Presentación breve (bloque preformateado):</p>
+            <pre>Hola, soy Cristian.
+    Estudiante de Front-End en la UTN.
+    Aprendiendo HTML paso a paso.</pre>
+        </section>
+
+        <!--SECCION: CONTACTO, formulario con los elementos vistos en clase-->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form method="get" action="">
+                <!--Campo oculto, no visible para el usuario-->
+                <input type="hidden" name="referencia" value="CV-CRISTIAN-2026">
+
+                <p>
+                    <label for="nombre-contacto">Nombre</label>
+                    <input type="text" id="nombre-contacto" name="nombre" autofocus required>
+                </p>
+                <p>
+                    <label for="correo-contacto">Correo</label>
+                    <input type="text" id="correo-contacto" name="correo" placeholder="Escriba su correo" required>
+                </p>
+                <p>
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">Seleccione...</option>
+                        <option value="oferta">Oferta de trabajo</option>
+                        <option value="proyecto">Colaboración en proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="temas">Temas de interés</label>
+                    <select id="temas" name="temas" multiple="multiple" required>
+                        <option value="frontend">Front-End</option>
+                        <option value="html">HTML</option>
+                        <option value="proyectos">Proyectos</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea cols="60" rows="6" id="mensaje" name="mensaje" required>Escriba su mensaje</textarea>
+                </p>
+                <p>
+                    <!--Ejemplo de campo tipo password visto en clase-->
+                    <label for="codigo">Código de acceso (demo)</label>
+                    <input type="password" id="codigo" name="codigo" placeholder="Solo para fines de práctica">
+                </p>
+                <p>
+                    <input type="submit" name="enviar" value="Enviar mensaje">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <p><small>Cortes López Cristian Yahir &nbsp;|&nbsp; UTN - Desarrollo Web Front-End</small></p>
+        <ul><a href="https://www.google.com">Volver arriba</a></ul>
+    </footer>
+
+</body>
+</html>
